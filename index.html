@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <title>Movie App</title>
+</head>
+
+<body>
+    
+    <header>
+           
+    
+        
+        <form id="form">
+            <input type="text" placeholder="seach" id="search" class="search">            
+        </form>
+    </header>
+    <main id="main">
+        <div class="movie">
+            <img src="data:image/jpeg;base64,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" alt="no-img"/>
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green"> 9.8</span>
+            </div>
+            <div class="overview">
+                <h3> overview</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, laboriosam?
+            </div>
+        </div>
+        <div class="movie">
+            <img src="data:image/jpeg;base64,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" alt="no-img"/>
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="orange"> 7.0</span>
+            </div>
+            <div class="overview">
+                <h3> overview</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, laboriosam?
+            </div>
+        </div>
+        <div class="movie">
+            <img src="data:image/jpeg;base64,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" alt="no-img"/>
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="red"> 6.1</span>
+            </div>
+            <div class="overview">
+                <h3> overview</h3>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, laboriosam?
+            </div>
+        </div>
+        
+
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
